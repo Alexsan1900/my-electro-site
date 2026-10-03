@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Электрик в Красногорске — профессиональный монтаж электрики в квартирах. Новостройки, капитальный ремонт, электрощиты, чистовой монтаж.">
+  <meta name="theme-color" content="#FF6B00">
+
+  <title>Электрик-Красногорск.РФ — Алексей</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            graphite: '#1A1A1A',
+            orange: '#FF6B00',
+            telegram: '#229ED9',
+            max: '#7657D9'
+          },
+          fontFamily: {
+            oswald: ['Oswald', 'sans-serif'],
+            outfit: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #1A1A1A;
+      font-family: 'Outfit', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    ::selection {
+      color: #fff;
+      background: #FF6B00;
+    }
+
+    /* Prevent horizontal overflow on mobile */
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    /* Soft premium shadows */
+    .shadow-premium {
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.08),
+        0 4px 14px rgba(0, 0, 0, 0.04);
+    }
+
+    .shadow-orange {
+      box-shadow: 0 15px 40px rgba(255, 107, 0, 0.20);
+    }
+
+    /* Carousel */
+    .carousel-track {
+      display: flex;
+      transition: transform 420ms cubic-bezier(.22, .61, .36, 1);
+      will-change: transform;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+    }
+
+    /* Accordion */
+    .accordion-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 350ms ease;
+    }
+
+    .accordion-content > div {
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .accordion-item.is-open .accordion-content {
+      grid-template-rows: 1fr;
+    }
+
+    .accordion-chevron {
+      transition: transform 300ms ease;
+    }
+
+    .accordion-item.is-open .accordion-chevron {
+      transform: rotate(180deg);
+    }
+
+    /* Lightbox */
+    .lightbox {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transition:
+        opacity 250ms ease,
+        visibility 250ms ease;
+    }
+
+    .lightbox.is-open {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-image {
+      transform: scale(.92);
+      transition: transform 350ms cubic-bezier(.22, .61, .36, 1);
+    }
+
+    .lightbox.is-open .lightbox-image {
+      transform: scale(1);
+    }
+
+    /* Mobile nav */
+    .mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition:
+        max-height 300ms ease,
+        opacity 200ms ease;
+    }
+
+    .mobile-menu.is-open {
+      max-height: 320px;
+      opacity: 1;
+    }
+
+    /* Hide scrollbar but preserve horizontal scrolling */
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Lightbox body lock */
+    body.no-scroll {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="sticky top-0 z-50 border-b border-black/[0.06] bg-white/95 backdrop-blur-xl">
+
+    <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+
+      <div class="flex min-h-[68px] items-center justify-between gap-4 md:min-h-[76px]">
+
+        <!-- Logo -->
+        <a
+          href="#top"
+          class="flex min-w-0 items-center gap-2.5 sm:gap-3"
+          aria-label="Электрик-Красногорск.РФ"
+        >
+          <img
+            src="logo.png"
+            alt="Логотип"
+            class="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12"
+          >
+
+          <div class="min-w-0">
+            <div class="whitespace-nowrap font-oswald text-[14px] font-semibold leading-none tracking-[-0.02em] sm:text-[17px] md:text-[19px]">
+              ЭЛЕКТРИК-<span class="text-orange">КРАСНОГОРСК</span>.РФ
+            </div>
+
+            <div class="mt-1 whitespace-nowrap font-outfit text-[6px] font-semibold tracking-[0.12em] text-gray-500 sm:text-[8px] md:text-[9px]">
+              КАЧЕСТВО
+              <span class="text-orange">•</span>
+              БЕЗОПАСНОСТЬ
+              <span class="text-orange">•</span>
+              ГАРАНТИЯ
+            </div>
+          </div>
+        </a>
+
+
+        <!-- Desktop navigation -->
+        <nav class="hidden items-center gap-8 lg:flex">
+          <a
+            href="#works"
+            class="font-outfit text-sm font-medium text-gray-500 transition hover:text-orange"
+          >
+            Работы
+          </a>
+
+          <a
+            href="#prices"
+            class="font-outfit text-sm font-medium text-gray-500 transition hover:text-orange"
+          >
+            Стоимость
+          </a>
+
+          <a
+            href="#about"
+            class="font-outfit text-sm font-medium text-gray-500 transition hover:text-orange"
+          >
+            О мастере
+          </a>
+        </nav>
+
+
+        <!-- Location desktop -->
+        <div class="hidden items-center gap-2.5 md:flex lg:gap-3">
+          <div class="flex h-8 w-8 items-center justify-center rounded-full bg-orange/10 text-orange">
+            <i data-lucide="map-pin" class="h-4 w-4"></i>
+          </div>
+
+          <span class="font-outfit text-xs font-medium text-gray-600 sm:text-sm">
+            Красногорск и район
+          </span>
+        </div>
+
+
+        <!-- Mobile menu -->
+        <button
+          id="mobileMenuButton"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-black/10 bg-white text-graphite md:h-11 md:w-11 lg:hidden"
+        >
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+
+      </div>
+
+
+      <!-- Mobile navigation -->
+      <div id="mobileMenu" class="mobile-menu lg:hidden">
+
+        <nav class="border-t border-black/[0.06] py-3">
+
+          <a
+            href="#works"
+            class="mobile-nav-link flex min-h-[48px] items-center border-b border-black/[0.05] font-outfit text-sm font-medium"
+          >
+            Работы
+          </a>
+
+          <a
+            href="#prices"
+            class="mobile-nav-link flex min-h-[48px] items-center border-b border-black/[0.05] font-outfit text-sm font-medium"
+          >
+            Стоимость
+          </a>
+
+          <a
+            href="#about"
+            class="mobile-nav-link flex min-h-[48px] items-center font-outfit text-sm font-medium"
+          >
+            О мастере
+          </a>
+
+        </nav>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <main id="top">
+
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="bg-white">
+
+      <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 sm:py-14 md:py-16 lg:px-8 lg:py-20">
+
+        <div class="grid items-center gap-9 md:gap-12 lg:grid-cols-[.92fr_1.08fr] lg:gap-14 xl:gap-20">
+
+
+          <!-- Hero text -->
+          <div class="order-1">
+
+            <!-- Tag -->
+            <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-orange/10 px-3 py-1.5 sm:mb-5 sm:px-4">
+
+              <span class="h-1.5 w-1.5 rounded-full bg-orange sm:h-2 sm:w-2"></span>
+
+              <span class="font-outfit text-[8px] font-bold tracking-[.13em] text-orange sm:text-[10px]">
+                ЭЛЕКТРИК В КРАСНОГОРСКЕ
+              </span>
+
+            </div>
+
+
+            <!-- H1 -->
+            <h1 class="max-w-[720px] text-[38px] font-semibold uppercase leading-[.98] tracking-[-.02em] sm:text-5xl md:text-6xl lg:text-[58px] xl:text-[68px]">
+              Профессиональный монтаж электрики
+              <span class="text-orange">в квартирах.</span>
+            </h1>
+
+
+            <!-- Subtitle -->
+            <p class="mt-5 max-w-[650px] font-outfit text-sm leading-6 text-gray-500 sm:mt-6 sm:text-base sm:leading-7">
+              Новостройки и капитальный ремонт. Фиксированная цена,
+              работа без предоплаты и официальная гарантия 12 месяцев.
+            </p>
+
+
+            <!-- Benefits -->
+            <div class="mt-7 grid grid-cols-2 gap-x-3 gap-y-4 sm:mt-8 sm:grid-cols-4 sm:gap-x-4 sm:gap-y-0">
+
+              <div class="flex items-center gap-2">
+                <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange/10 text-orange">
+                  <i data-lucide="check" class="h-4 w-4"></i>
+                </div>
+
+                <span class="font-outfit text-[9px] font-medium leading-[1.25] text-gray-600 sm:text-[10px]">
+                  Работа по<br>ПУЭ и ГОСТ
+                </span>
+              </div>
+
+
+              <div class="flex items-center gap-2">
+                <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange/10 text-orange">
+                  <i data-lucide="check" class="h-4 w-4"></i>
+                </div>
+
+                <span class="font-outfit text-[9px] font-medium leading-[1.25] text-gray-600 sm:text-[10px]">
+                  Без<br>предоплаты
+                </span>
+              </div>
+
+
+              <div class="flex items-center gap-2">
+                <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange/10 text-orange">
+                  <i data-lucide="check" class="h-4 w-4"></i>
+                </div>
+
+                <span class="font-outfit text-[9px] font-medium leading-[1.25] text-gray-600 sm:text-[10px]">
+                  Гарантия<br>12 мес.
+                </span>
+              </div>
+
+
+              <div class="flex items-center gap-2">
+                <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange/10 text-orange">
+                  <i data-lucide="check" class="h-4 w-4"></i>
+                </div>
+
+                <span class="font-outfit text-[9px] font-medium leading-[1.25] text-gray-600 sm:text-[10px]">
+                  Чистый<br>монтаж
+                </span>
+              </div>
+
+            </div>
+
+
+            <!-- CTA -->
+            <div class="mt-7 flex flex-col gap-2.5 sm:mt-8 sm:flex-row">
+
+              <a
+                href="#prices"
+                class="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl bg-orange px-5 font-outfit text-xs font-bold text-white shadow-orange transition hover:-translate-y-0.5 hover:bg-[#e96000] sm:w-auto sm:px-6 sm:text-sm"
+              >
+                Рассчитать стоимость
+                <i data-lucide="arrow-right" class="h-4 w-4"></i>
+              </a>
+
+
+              <a
+                href="#messengers"
+                class="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl border border-emerald-400 bg-white px-5 font-outfit text-xs font-semibold text-emerald-600 transition hover:bg-emerald-50 sm:w-auto sm:px-6 sm:text-sm"
+              >
+                <i data-lucide="message-circle" class="h-4 w-4"></i>
+                Написать в MAX/Telegram
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- Hero image -->
+          <div class="order-2">
+
+            <div class="relative overflow-hidden rounded-[22px] sm:rounded-[28px] shadow-premium">
+
+              <img
+                src="first_page_photo.png"
+                alt="Монтаж электрики"
+                class="block aspect-[4/3] h-auto w-full object-cover sm:aspect-[1.15/1] lg:aspect-[1.1/1]"
+              >
+
+
+              <!-- Location plate -->
+              <div class="absolute bottom-3 left-3 right-3 rounded-2xl border border-white/70 bg-white/95 p-3 shadow-xl backdrop-blur-md sm:bottom-5 sm:left-5 sm:right-auto sm:max-w-[380px] sm:p-4">
+
+                <div class="flex items-center gap-2.5 sm:gap-3">
+
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange text-white sm:h-10 sm:w-10">
+                    <i data-lucide="map-pin" class="h-4 w-4 sm:h-5 sm:w-5"></i>
+                  </div>
+
+                  <div>
+                    <div class="font-outfit text-[10px] font-bold sm:text-xs">
+                      Оперативный выезд:
+                    </div>
+
+                    <div class="mt-0.5 font-outfit text-[8px] leading-4 text-gray-500 sm:text-[10px] sm:leading-5">
+                      Красногорск, Нахабино, Опалиха,<br>
+                      Павшинская Пойма
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ============================================================
+         WORKS / CAROUSEL
+    ============================================================ -->
+    <section id="works" class="bg-[#F6F6F4] py-12 sm:py-16 md:py-20">
+
+      <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+
+
+        <!-- Section header -->
+        <div class="mb-6 flex items-end justify-between gap-4 sm:mb-8">
+
+          <div>
+
+            <div class="mb-2 font-outfit text-[9px] font-bold tracking-[.2em] text-orange sm:text-[10px]">
+              РЕАЛЬНЫЕ ОБЪЕКТЫ
+            </div>
+
+            <h2 class="text-[34px] font-semibold uppercase leading-none sm:text-5xl">
+              Примеры работ
+            </h2>
+
+          </div>
+
+
+          <!-- Desktop arrows -->
+          <div class="hidden gap-2 sm:flex">
+
+            <button
+              id="prevSlide"
+              type="button"
+              aria-label="Предыдущая работа"
+              class="flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white text-gray-600 transition hover:border-orange hover:text-orange"
+            >
+              <i data-lucide="arrow-left" class="h-4 w-4"></i>
+            </button>
+
+            <button
+              id="nextSlide"
+              type="button"
+              aria-label="Следующая работа"
+              class="flex h-11 w-11 items-center justify-center rounded-full bg-orange text-white shadow-orange transition hover:bg-[#e96000]"
+            >
+              <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- Main carousel -->
+        <div class="relative overflow-hidden rounded-[20px] bg-white shadow-premium sm:rounded-[26px]">
+
+          <div id="carouselTrack" class="carousel-track">
+
+            <!-- JS generates slides -->
+
+          </div>
+
+
+          <!-- Mobile arrows -->
+          <button
+            id="prevSlideMobile"
+            type="button"
+            aria-label="Предыдущая работа"
+            class="absolute left-2 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 shadow-lg sm:hidden"
+          >
+            <i data-lucide="arrow-left" class="h-4 w-4"></i>
+          </button>
+
+          <button
+            id="nextSlideMobile"
+            type="button"
+            aria-label="Следующая работа"
+            class="absolute right-2 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 shadow-lg sm:hidden"
+          >
+            <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </button>
+
+        </div>
+
+
+        <!-- Thumbnail strip -->
+        <div class="relative mt-3 sm:mt-4">
+
+          <div
+            id="thumbnailStrip"
+            class="hide-scrollbar flex gap-2 overflow-x-auto pb-1"
+          >
+            <!-- JS generates thumbnails -->
+          </div>
+
+        </div>
+
+
+        <!-- Pagination -->
+        <div id="pagination" class="mt-4 flex justify-center gap-1.5">
+          <!-- JS generates dots -->
+        </div>
+
+
+        <!-- Caption -->
+        <p class="mt-4 text-center font-outfit text-xs text-gray-500 sm:mt-5 sm:text-sm">
+          ЖК “Серебрица”, “8 Клёнов”, “Изумрудные Холмы”
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ============================================================
+         SERVICES / ACCORDIONS
+    ============================================================ -->
+    <section id="prices" class="bg-white py-14 sm:py-18 md:py-20">
+
+      <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="max-w-2xl">
+
+          <div class="mb-2 font-outfit text-[9px] font-bold tracking-[.2em] text-orange sm:text-[10px]">
+            УСЛУГИ И СТОИМОСТЬ
+          </div>
+
+          <h2 class="text-[34px] font-semibold uppercase leading-none sm:text-5xl">
+            Что я предлагаю
+          </h2>
+
+          <p class="mt-4 max-w-xl font-outfit text-sm leading-6 text-gray-500 sm:text-base sm:leading-7">
+            Ориентировочные цены на популярные работы.
+            Точную стоимость согласовываем до начала работ.
+          </p>
+
+        </div>
+
+
+        <!-- Accordion grid -->
+        <div class="mt-9 grid gap-4 md:mt-10 lg:grid-cols-3 lg:gap-5">
+
+
+          <!-- Card 1 -->
+          <article
+            class="accordion-item overflow-hidden rounded-[20px] border border-gray-200 bg-white transition hover:border-orange/30 sm:rounded-[24px]"
+          >
+
+            <button
+              type="button"
+              class="accordion-trigger flex min-h-[155px] w-full items-start justify-between gap-4 p-5 text-left sm:min-h-[180px] sm:p-7"
+              aria-expanded="false"
+            >
+
+              <div>
+
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange/10 text-orange">
+                  <i data-lucide="lamp-ceiling" class="h-5 w-5"></i>
+                </div>
+
+                <h3 class="mt-6 text-xl font-semibold uppercase leading-[1.05] sm:text-2xl">
+                  Доработка и<br>чистовой монтаж
+                </h3>
+
+                <p class="mt-3 font-outfit text-xs leading-5 text-gray-500">
+                  Розетки, выключатели, светильники и подключение техники.
+                </p>
+
+              </div>
+
+              <div class="accordion-chevron mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100">
+                <i data-lucide="chevron-down" class="h-4 w-4"></i>
+              </div>
+
+            </button>
+
+
+            <div class="accordion-content">
+
+              <div>
+
+                <div class="border-t border-gray-100 px-5 pb-5 pt-4 sm:px-7 sm:pb-7">
+
+                  <div class="space-y-2">
+
+                    <div class="flex items-center justify-between gap-3 border-b border-gray-100 py-2.5">
+                      <span class="font-outfit text-xs text-gray-600 sm:text-sm">
+                        Установка розетки/выключателя
+                      </span>
+                      <strong class="shrink-0 font-outfit text-xs font-bold sm:text-sm">
+                        от 250 ₽
+                      </strong>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3 border-b border-gray-100 py-2.5">
+                      <span class="font-outfit text-xs text-gray-600 sm:text-sm">
+                        Перенос точки
+                      </span>
+                      <strong class="shrink-0 font-outfit text-xs font-bold sm:text-sm">
+                        от 600 ₽
+                      </strong>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3 border-b border-gray-100 py-2.5">
+                      <span class="font-outfit text-xs text-gray-600 sm:text-sm">
+                        Навеска люстры
+                      </span>
+                      <strong class="shrink-0 font-outfit text-xs font-bold sm:text-sm">
+                        от 1 500 ₽
+                      </strong>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3 py-2.5">
+                      <span class="font-outfit text-xs text-gray-600 sm:text-sm">
+                        Подключение варочной панели
+                      </span>
+                      <strong class="shrink-0 font-outfit text-xs font-bold sm:text-sm">
+                        от 1 200 ₽
+                      </strong>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- Card 2 -->
+          <article
+            class="accordion-item overflow-hidden rounded-[20px] border border-gray-200 bg-white transition hover:border-orange/30 sm:rounded-[24px]"
+          >
+
+            <button
+              type="button"
+              class="accordion-trigger flex min-h-[155px] w-full items-start justify-between gap-4 p-5 text-left sm:min-h-[180px] sm:p-7"
+              aria-expanded="false"
+            >
+
+              <div>
+
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange/10 text-orange">
+                  <i data-lucide="panel-top" class="h-5 w-5"></i>
+                </div>
+
+                <h3 class="mt-6 text-xl font-semibold uppercase leading-[1.05] sm:text-2xl">
+                  Работа с<br>электрощитами
+                </h3>
+
+                <p class="mt-3 font-outfit text-xs leading-5 text-gray-500">
+                  Автоматы, реле напряжения, переборка и модернизация щитков.
+                </p>
+
+              </div>
+
+              <div class="accordion-chevron mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100">
+                <i data-lucide="chevron-down" class="h-4 w-4"></i>
+              </div>
+
+            </button>
+
+
+            <div class="accordion-content">
+
+              <div>
+
+                <div class="border-t border-gray-100 px-5 pb-5 pt-4 sm:px-7 sm:pb-7">
+
+                  <div class="space-y-2">
+
+                    <div class="flex items-center justify-between gap-3 border-b border-gray-100 py-2.5">
+                      <span class="font-outfit text-xs text-gray-600 sm:text-sm">
+                        Замена автомата
+                      </span>
+                      <strong class="shrink-0 font-outfit text-xs font-bold sm:text-sm">
+                        от 400 ₽
+                      </strong>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3 border-b border-gray-100 py-2.5">
+                      <span class="font-outfit text-xs text-gray-600 sm:text-sm">
+                        Установка реле напряжения
+                      </span>
+                      <strong class="shrink-0 font-outfit text-xs font-bold sm:text-sm">
+                        от 1 200 ₽
+                      </strong>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3 py-2.5">
+                      <span class="font-outfit text-xs text-gray-600 sm:text-sm">
+                        Переборка щитка
+                      </span>
+                      <strong class="shrink-0 font-outfit text-xs font-bold sm:text-sm">
+                        от 5 000 ₽
+                      </strong>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- Card 3 -->
+          <article
+            class="accordion-item overflow-hidden rounded-[20px] border border-gray-200 bg-white transition hover:border-orange/30 sm:rounded-[24px]"
+          >
+
+            <button
+              type="button"
+              class="accordion-trigger flex min-h-[155px] w-full items-start justify-between gap-4 p-5 text-left sm:min-h-[180px] sm:p-7"
+              aria-expanded="false"
+            >
+
+              <div>
+
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange/10 text-orange">
+                  <i data-lucide="search-check" class="h-5 w-5"></i>
+                </div>
+
+                <h3 class="mt-6 text-xl font-semibold uppercase leading-[1.05] sm:text-2xl">
+                  Поиск скрытых<br>неисправностей
+                </h3>
+
+                <p class="mt-3 font-outfit text-xs leading-5 text-gray-500">
+                  Диагностика линий, поиск причин срабатывания защиты и КЗ.
+                </p>
+
+              </div>
+
+              <div class="accordion-chevron mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100">
+                <i data-lucide="chevron-down" class="h-4 w-4"></i>
+              </div>
+
+            </button>
+
+
+            <div class="accordion-content">
+
+              <div>
+
+                <div class="border-t border-gray-100 px-5 pb-5 pt-4 sm:px-7 sm:pb-7">
+
+                  <div class="space-y-2">
+
+                    <div class="flex items-center justify-between gap-3 border-b border-gray-100 py-2.5">
+                      <span class="font-outfit text-xs text-gray-600 sm:text-sm">
+                        Диагностика линии приборами
+                      </span>
+                      <strong class="shrink-0 font-outfit text-xs font-bold sm:text-sm">
+                        от 2 000 ₽
+                      </strong>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3 py-2.5">
+                      <span class="font-outfit text-xs text-gray-600 sm:text-sm">
+                        Устранение короткого замыкания
+                      </span>
+                      <strong class="shrink-0 font-outfit text-xs font-bold sm:text-sm">
+                        от 1 500 ₽
+                      </strong>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <p class="mt-5 font-outfit text-[10px] leading-5 text-gray-400">
+          * Цены указаны ориентировочно и могут зависеть от сложности,
+          состояния существующей электрики и объёма работ.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ============================================================
+         IMPORTANT RULE / MESSENGERS
+    ============================================================ -->
+    <section id="messengers" class="bg-[#F5F5F3] px-4 py-14 sm:px-6 sm:py-18 md:py-20">
+
+      <div class="mx-auto max-w-[960px]">
+
+        <div class="relative overflow-hidden rounded-[24px] border border-orange/20 bg-white p-5 shadow-premium sm:rounded-[30px] sm:p-8 md:p-12">
+
+          <!-- Decorative circle -->
+          <div class="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-orange/[0.055] sm:-right-12 sm:-top-28 sm:h-80 sm:w-80"></div>
+
+
+          <div class="relative">
+
+            <!-- Label -->
+            <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-orange/10 px-3 py-1.5 sm:mb-5 sm:px-4">
+
+              <i data-lucide="message-square-text" class="h-3.5 w-3.5 text-orange"></i>
+
+              <span class="font-outfit text-[8px] font-bold tracking-[.13em] text-orange sm:text-[9px]">
+                ВАЖНОЕ ПРАВИЛО РАБОТЫ
+              </span>
+
+            </div>
+
+
+            <!-- Heading -->
+            <h2 class="max-w-[760px] text-[32px] font-semibold uppercase leading-[1.02] sm:text-4xl md:text-5xl">
+              Как узнать точную стоимость без лишних выездов?
+            </h2>
+
+
+            <!-- Text -->
+            <div class="mt-6 rounded-2xl bg-[#F7F7F6] p-4 sm:mt-7 sm:p-6">
+
+              <p class="font-outfit text-xs leading-6 text-gray-600 sm:text-sm sm:leading-7">
+
+                <strong class="text-gray-900">
+                  💬 ВАЖНОЕ ПРАВИЛО РАБОТЫ:
+                </strong>
+
+                На объектах мне неудобно отвлекаться на звонки, поэтому я начинаю
+                общение и расчеты строго в сообщениях в мессенджерах. Это фиксирует
+                стоимость и все детали, чтобы не было путаницы.
+
+                <br><br>
+
+                Пожалуйста, напишите в чат и пришлите фото проблемы или места работы.
+                Сразу сориентирую по делу!
+
+                <br><br>
+
+                С уважением, Алексей.
+
+              </p>
+
+            </div>
+
+
+            <!-- Messenger buttons -->
+            <div class="mt-5 grid gap-3 sm:mt-6 sm:grid-cols-2">
+
+              <!-- MAX -->
+              <a
+                href="#"
+                data-messenger="max"
+                class="messenger-link flex min-h-[58px] w-full items-center justify-center gap-3 rounded-xl bg-[#7657D9] px-5 font-outfit text-sm font-bold text-white shadow-lg shadow-[#7657D9]/15 transition hover:-translate-y-0.5 hover:bg-[#694bc8]"
+              >
+                <span class="flex h-7 w-7 items-center justify-center rounded-full bg-white/20">
+                  <i data-lucide="message-circle" class="h-4 w-4"></i>
+                </span>
+
+                Написать в MAX
+              </a>
+
+
+              <!-- Telegram -->
+              <a
+                href="#"
+                data-messenger="telegram"
+                class="messenger-link flex min-h-[58px] w-full items-center justify-center gap-3 rounded-xl bg-[#229ED9] px-5 font-outfit text-sm font-bold text-white shadow-lg shadow-[#229ED9]/15 transition hover:-translate-y-0.5 hover:bg-[#168fc9]"
+              >
+                <span class="flex h-7 w-7 items-center justify-center">
+                  <i data-lucide="send" class="h-5 w-5"></i>
+                </span>
+
+                Написать в Telegram
+              </a>
+
+            </div>
+
+
+            <p class="mt-4 text-center font-outfit text-[9px] leading-4 text-gray-400 sm:text-[10px]">
+              Пришлите фото объекта — это поможет быстро сориентировать вас по стоимости.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section id="about" class="bg-white py-14 sm:py-18 md:py-20">
+
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+
+        <div class="grid items-center gap-10 md:gap-12 lg:grid-cols-[.85fr_1.15fr] lg:gap-16">
+
+
+          <!-- Photo -->
+          <div class="relative">
+
+            <div class="overflow-hidden rounded-[24px] sm:rounded-[28px] shadow-premium">
+
+              <img
+                src="aboutme_picture.png"
+                alt="Электрик Алексей"
+                class="block h-auto w-full object-cover"
+              >
+
+            </div>
+
+
+            <!-- Guarantee badge -->
+            <div class="absolute -bottom-4 right-3 rounded-xl border border-black/[0.05] bg-white px-4 py-3 shadow-xl sm:-bottom-5 sm:right-5 sm:px-5 sm:py-4">
+
+              <div class="font-oswald text-xl font-semibold leading-none sm:text-2xl">
+                12 <span class="text-orange">мес.</span>
+              </div>
+
+              <div class="mt-1 font-outfit text-[7px] font-medium uppercase tracking-wider text-gray-500 sm:text-[9px]">
+                официальной гарантии
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- About text -->
+          <div>
+
+            <div class="mb-2 font-outfit text-[9px] font-bold tracking-[.2em] text-orange sm:text-[10px]">
+              О МАСТЕРЕ
+            </div>
+
+            <h2 class="text-[34px] font-semibold uppercase leading-none sm:text-5xl">
+              Меня зовут Алексей
+            </h2>
+
+            <p class="mt-4 max-w-2xl font-outfit text-sm leading-6 text-gray-500 sm:mt-5 sm:text-base sm:leading-7">
+              Работаю с электрикой в квартирах Красногорска и ближайших районов.
+              Для меня важны безопасность, аккуратность и заранее понятная стоимость.
+            </p>
+
+
+            <!-- Standards -->
+            <ul class="mt-7 space-y-4 sm:mt-8 sm:space-y-5">
+
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange/10 text-orange">
+                  <i data-lucide="check" class="h-3.5 w-3.5"></i>
+                </span>
+
+                <span class="font-outfit text-xs leading-5 text-gray-600 sm:text-sm sm:leading-6">
+                  Я занимаюсь профессиональным монтажом электрики в квартирах
+                  Красногорска и ближайших районов.
+                </span>
+              </li>
+
+
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange/10 text-orange">
+                  <i data-lucide="check" class="h-3.5 w-3.5"></i>
+                </span>
+
+                <span class="font-outfit text-xs leading-5 text-gray-600 sm:text-sm sm:leading-6">
+                  Не работаю «на скорость» и не экономлю на безопасности.
+                </span>
+              </li>
+
+
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange/10 text-orange">
+                  <i data-lucide="check" class="h-3.5 w-3.5"></i>
+                </span>
+
+                <span class="font-outfit text-xs leading-5 text-gray-600 sm:text-sm sm:leading-6">
+                  Каждый объект собирается так, как сделал бы для собственной квартиры.
+                </span>
+              </li>
+
+
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange/10 text-orange">
+                  <i data-lucide="check" class="h-3.5 w-3.5"></i>
+                </span>
+
+                <span class="font-outfit text-xs leading-5 text-gray-600 sm:text-sm sm:leading-6">
+                  Работаю только по требованиям ПУЭ и ГОСТ.
+                </span>
+              </li>
+
+
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange/10 text-orange">
+                  <i data-lucide="check" class="h-3.5 w-3.5"></i>
+                </span>
+
+                <span class="font-outfit text-xs leading-5 text-gray-600 sm:text-sm sm:leading-6">
+                  Использую профессиональный инструмент, штроборез с промышленным
+                  пылесосом и качественные материалы.
+                </span>
+              </li>
+
+
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange/10 text-orange">
+                  <i data-lucide="check" class="h-3.5 w-3.5"></i>
+                </span>
+
+                <span class="font-outfit text-xs leading-5 text-gray-600 sm:text-sm sm:leading-6">
+                  Перед началом работ согласовываем стоимость.
+                  После этого цена не меняется.
+                </span>
+              </li>
+
+            </ul>
+
+
+            <a
+              href="#messengers"
+              class="mt-7 inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl bg-orange px-6 font-outfit text-xs font-bold text-white transition hover:bg-[#e96000] sm:mt-8 sm:w-auto sm:text-sm"
+            >
+              Обсудить мой объект
+              <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="bg-[#1A1A1A] py-7 text-white sm:py-8">
+
+    <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+
+      <div class="flex flex-col gap-3 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
+
+        <p class="font-outfit text-[9px] leading-4 text-white/50 sm:text-[10px]">
+          Зона обслуживания: Красногорск, Нахабино, Опалиха, Павшинская Пойма.
+        </p>
+
+        <p class="shrink-0 font-outfit text-[9px] text-white/35 sm:text-[10px]">
+          © 2026 электрик-красногорск.рф
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ============================================================
+       LIGHTBOX
+  ============================================================ -->
+  <div
+    id="lightbox"
+    class="lightbox fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-3 sm:p-6"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Просмотр фотографии"
+  >
+
+    <!-- Close -->
+    <button
+      id="lightboxClose"
+      type="button"
+      aria-label="Закрыть"
+      class="absolute right-3 top-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition hover:bg-white/20 sm:right-6 sm:top-6"
+    >
+      <i data-lucide="x" class="h-5 w-5"></i>
+    </button>
+
+
+    <!-- Previous -->
+    <button
+      id="lightboxPrev"
+      type="button"
+      aria-label="Предыдущая фотография"
+      class="absolute left-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition hover:bg-white/20 sm:left-6 sm:h-12 sm:w-12"
+    >
+      <i data-lucide="arrow-left" class="h-5 w-5"></i>
+    </button>
+
+
+    <!-- Image -->
+    <img
+      id="lightboxImage"
+      src=""
+      alt="Увеличенная фотография работы"
+      class="lightbox-image max-h-[90vh] max-w-[92vw] rounded-lg object-contain shadow-2xl sm:max-w-[88vw]"
+    >
+
+
+    <!-- Next -->
+    <button
+      id="lightboxNext"
+      type="button"
+      aria-label="Следующая фотография"
+      class="absolute right-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition hover:bg-white/20 sm:right-6 sm:h-12 sm:w-12"
+    >
+      <i data-lucide="arrow-right" class="h-5 w-5"></i>
+    </button>
+
+  </div>
+
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+
+    /* ==========================================================
+       CONFIGURATION
+       ========================================================== */
+
+    /*
+      Укажите реальные ссылки на мессенджеры здесь.
+
+      Пример Telegram:
+      const telegramUrl = 'https://t.me/username';
+
+      Для MAX используйте фактическую ссылку/Deep Link,
+      предоставляемую вашим аккаунтом или сервисом.
+    */
+
+    const telegramUrl = '';
+    const maxUrl = '';
+
+
+    /* ==========================================================
+       ICONS
+    ========================================================== */
+
+    lucide.createIcons();
+
+
+    /* ==========================================================
+       MOBILE MENU
+    ========================================================== */
+
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    let mobileMenuOpen = false;
+
+    function setMobileMenuState(open) {
+
+      mobileMenuOpen = open;
+
+      mobileMenu.classList.toggle('is-open', open);
+
+      mobileMenuButton.setAttribute(
+        'aria-expanded',
+        String(open)
+      );
+
+      mobileMenuButton.innerHTML = open
+        ? '<i data-lucide="x" class="h-5 w-5"></i>'
+        : '<i data-lucide="menu" class="h-5 w-5"></i>';
+
+      lucide.createIcons();
+    }
+
+    mobileMenuButton.addEventListener('click', () => {
+      setMobileMenuState(!mobileMenuOpen);
+    });
+
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+
+      link.addEventListener('click', () => {
+        setMobileMenuState(false);
+      });
+
+    });
+
+
+    /* ==========================================================
+       WORKS CAROUSEL
+    ========================================================== */
+
+    const workImages = [
+      '13.png',
+      '12.png',
+      '11.png',
+      '10.png',
+      '9.png',
+      '8.png',
+      '7.png',
+      '6.png',
+      '5.png',
+      '4.png'
+    ];
+
+    const carouselTrack = document.getElementById('carouselTrack');
+    const thumbnailStrip = document.getElementById('thumbnailStrip');
+    const pagination = document.getElementById('pagination');
+
+    let currentSlide = 0;
+
+
+    /*
+      Generate carousel slides.
+    */
+    workImages.forEach((src, index) => {
+
+      const slide = document.createElement('div');
+
+      slide.className = 'carousel-slide cursor-zoom-in';
+
+      slide.innerHTML = `
+        <button
+          type="button"
+          class="block h-full w-full"
+          data-lightbox-index="${index}"
+          aria-label="Открыть фотографию ${index + 1}"
+        >
+          <img
+            src="${src}"
+            alt="Пример электромонтажных работ ${index + 1}"
+            class="block aspect-[4/3] h-full w-full object-cover sm:aspect-[16/8] lg:aspect-[16/7]"
+            loading="${index === 0 ? 'eager' : 'lazy'}"
+          >
+        </button>
+      `;
+
+      carouselTrack.appendChild(slide);
+
+    });
+
+
+    /*
+      Generate thumbnails.
+    */
+    workImages.forEach((src, index) => {
+
+      const thumbnail = document.createElement('button');
+
+      thumbnail.type = 'button';
+
+      thumbnail.className = `
+        carousel-thumbnail
+        relative
+        shrink-0
+        overflow-hidden
+        rounded-lg
+        border-2
+        bg-white
+        transition
+        ${index === 0 ? 'border-orange' : 'border-transparent'}
+      `;
+
+      thumbnail.setAttribute(
+        'aria-label',
+        `Выбрать фотографию ${index + 1}`
+      );
+
+      thumbnail.dataset.slide = index;
+
+      thumbnail.innerHTML = `
+        <img
+          src="${src}"
+          alt=""
+          class="h-14 w-20 object-cover sm:h-16 sm:w-24"
+          loading="lazy"
+        >
+      `;
+
+      thumbnailStrip.appendChild(thumbnail);
+
+    });
+
+
+    /*
+      Generate pagination dots.
+    */
+    workImages.forEach((_, index) => {
+
+      const dot = document.createElement('button');
+
+      dot.type = 'button';
+
+      dot.className =
+        index === 0
+          ? 'h-2.5 w-7 rounded-full bg-orange transition-all'
+          : 'h-2.5 w-2.5 rounded-full bg-gray-300 transition-all';
+
+      dot.setAttribute(
+        'aria-label',
+        `Перейти к фотографии ${index + 1}`
+      );
+
+      dot.dataset.slide = index;
+
+      pagination.appendChild(dot);
+
+    });
+
+
+    const paginationDots = pagination.querySelectorAll('button');
+    const thumbnails = thumbnailStrip.querySelectorAll('.carousel-thumbnail');
+
+
+    function updateCarousel(index, smooth = true) {
+
+      currentSlide =
+        (index + workImages.length) % workImages.length;
+
+      carouselTrack.style.transition = smooth
+        ? 'transform 420ms cubic-bezier(.22,.61,.36,1)'
+        : 'none';
+
+      carouselTrack.style.transform =
+        `translateX(-${currentSlide * 100}%)`;
+
+
+      /* Update dots */
+
+      paginationDots.forEach((dot, i) => {
+
+        if (i === currentSlide) {
+
+          dot.classList.remove(
+            'w-2.5',
+            'bg-gray-300'
+          );
+
+          dot.classList.add(
+            'w-7',
+            'bg-orange'
+          );
+
+        } else {
+
+          dot.classList.remove(
+            'w-7',
+            'bg-orange'
+          );
+
+          dot.classList.add(
+            'w-2.5',
+            'bg-gray-300'
+          );
+
+        }
+
+      });
+
+
+      /* Update thumbnails */
+
+      thumbnails.forEach((thumbnail, i) => {
+
+        thumbnail.classList.toggle(
+          'border-orange',
+          i === currentSlide
+        );
+
+        thumbnail.classList.toggle(
+          'border-transparent',
+          i !== currentSlide
+        );
+
+      });
+
+
+      /* Keep selected thumbnail visible */
+
+      if (thumbnails[currentSlide]) {
+
+        thumbnails[currentSlide].scrollIntoView({
+          behavior: smooth ? 'smooth' : 'auto',
+          block: 'nearest',
+          inline: 'center'
+        });
+
+      }
+
+    }
+
+
+    function nextSlide() {
+      updateCarousel(currentSlide + 1);
+    }
+
+
+    function previousSlide() {
+      updateCarousel(currentSlide - 1);
+    }
+
+
+    document.getElementById('nextSlide').addEventListener(
+      'click',
+      nextSlide
+    );
+
+    document.getElementById('prevSlide').addEventListener(
+      'click',
+      previousSlide
+    );
+
+    document.getElementById('nextSlideMobile').addEventListener(
+      'click',
+      nextSlide
+    );
+
+    document.getElementById('prevSlideMobile').addEventListener(
+      'click',
+      previousSlide
+    );
+
+
+    paginationDots.forEach(dot => {
+
+      dot.addEventListener('click', () => {
+
+        updateCarousel(
+          Number(dot.dataset.slide)
+        );
+
+      });
+
+    });
+
+
+    thumbnails.forEach(thumbnail => {
+
+      thumbnail.addEventListener('click', () => {
+
+        updateCarousel(
+          Number(thumbnail.dataset.slide)
+        );
+
+      });
+
+    });
+
+
+    /* Keyboard navigation */
+
+    document.addEventListener('keydown', event => {
+
+      if (
+        document.getElementById('lightbox').classList.contains('is-open')
+      ) {
+        return;
+      }
+
+      if (event.key === 'ArrowRight') {
+        nextSlide();
+      }
+
+      if (event.key === 'ArrowLeft') {
+        previousSlide();
+      }
+
+    });
+
+
+    /* Touch swipe */
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carouselTrack.addEventListener(
+      'touchstart',
+      event => {
+        touchStartX = event.changedTouches[0].screenX;
+      },
+      { passive: true }
+    );
+
+    carouselTrack.addEventListener(
+      'touchend',
+      event => {
+
+        touchEndX = event.changedTouches[0].screenX;
+
+        const distance = touchStartX - touchEndX;
+
+        if (Math.abs(distance) < 50) {
+          return;
+        }
+
+        if (distance > 0) {
+          nextSlide();
+        } else {
+          previousSlide();
+        }
+
+      },
+      { passive: true }
+    );
+
+
+    /* ==========================================================
+       LIGHTBOX
+    ========================================================== */
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+
+    let lightboxIndex = 0;
+
+
+    function openLightbox(index) {
+
+      lightboxIndex =
+        (index + workImages.length) % workImages.length;
+
+      lightboxImage.src = workImages[lightboxIndex];
+
+      lightboxImage.alt =
+        `Увеличенная фотография работы ${lightboxIndex + 1}`;
+
+      lightbox.classList.add('is-open');
+
+      document.body.classList.add('no-scroll');
+
+      updateCarousel(lightboxIndex);
+
+    }
+
+
+    function closeLightbox() {
+
+      lightbox.classList.remove('is-open');
+
+      document.body.classList.remove('no-scroll');
+
+    }
+
+
+    function lightboxNextImage() {
+
+      lightboxIndex =
+        (lightboxIndex + 1) % workImages.length;
+
+      lightboxImage.src = workImages[lightboxIndex];
+
+      updateCarousel(lightboxIndex);
+
+    }
+
+
+    function lightboxPreviousImage() {
+
+      lightboxIndex =
+        (lightboxIndex - 1 + workImages.length) %
+        workImages.length;
+
+      lightboxImage.src = workImages[lightboxIndex];
+
+      updateCarousel(lightboxIndex);
+
+    }
+
+
+    /*
+      Open lightbox from any main carousel image.
+    */
+    document.addEventListener('click', event => {
+
+      const button =
+        event.target.closest('[data-lightbox-index]');
+
+      if (!button) {
+        return;
+      }
+
+      openLightbox(
+        Number(button.dataset.lightboxIndex)
+      );
+
+    });
+
+
+    lightboxClose.addEventListener(
+      'click',
+      closeLightbox
+    );
+
+    lightboxNext.addEventListener(
+      'click',
+      lightboxNextImage
+    );
+
+    lightboxPrev.addEventListener(
+      'click',
+      lightboxPreviousImage
+    );
+
+
+    /*
+      Close by clicking backdrop.
+    */
+    lightbox.addEventListener('click', event => {
+
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+
+    });
+
+
+    /*
+      Lightbox keyboard controls.
+    */
+    document.addEventListener('keydown', event => {
+
+      if (!lightbox.classList.contains('is-open')) {
+        return;
+      }
+
+      if (event.key === 'Escape') {
+        closeLightbox();
+      }
+
+      if (event.key === 'ArrowRight') {
+        lightboxNextImage();
+      }
+
+      if (event.key === 'ArrowLeft') {
+        lightboxPreviousImage();
+      }
+
+    });
+
+
+    /*
+      Lightbox touch swipe.
+    */
+    let lightboxTouchStartX = 0;
+
+    lightbox.addEventListener(
+      'touchstart',
+      event => {
+        lightboxTouchStartX =
+          event.changedTouches[0].screenX;
+      },
+      { passive: true }
+    );
+
+    lightbox.addEventListener(
+      'touchend',
+      event => {
+
+        const touchEndX =
+          event.changedTouches[0].screenX;
+
+        const distance =
+          lightboxTouchStartX - touchEndX;
+
+        if (Math.abs(distance) < 50) {
+          return;
+        }
+
+        if (distance > 0) {
+          lightboxNextImage();
+        } else {
+          lightboxPreviousImage();
+        }
+
+      },
+      { passive: true }
+    );
+
+
+    /* ==========================================================
+       ACCORDION / PRICE CARDS
+    ========================================================== */
+
+    const accordionItems =
+      document.querySelectorAll('.accordion-item');
+
+
+    accordionItems.forEach(item => {
+
+      const trigger =
+        item.querySelector('.accordion-trigger');
+
+
+      trigger.addEventListener('click', () => {
+
+        const wasOpen =
+          item.classList.contains('is-open');
+
+
+        /*
+          Close all other cards.
+        */
+        accordionItems.forEach(otherItem => {
+
+          otherItem.classList.remove('is-open');
+
+          const otherTrigger =
+            otherItem.querySelector('.accordion-trigger');
+
+          otherTrigger.setAttribute(
+            'aria-expanded',
+            'false'
+          );
+
+        });
+
+
+        /*
+          Toggle selected card.
+        */
+        if (!wasOpen) {
+
+          item.classList.add('is-open');
+
+          trigger.setAttribute(
+            'aria-expanded',
+            'true'
+          );
+
+        }
+
+      });
+
+    });
+
+
+    /* ==========================================================
+       MESSENGER LINKS
+    ========================================================== */
+
+    document.querySelectorAll('[data-messenger]').forEach(link => {
+
+      const type = link.dataset.messenger;
+
+      if (type === 'telegram' && telegramUrl) {
+        link.href = telegramUrl;
+        return;
+      }
+
+      if (type === 'max' && maxUrl) {
+        link.href = maxUrl;
+        return;
+      }
+
+
+      /*
+        Until real links are inserted, buttons smoothly return
+        the visitor to the messenger section instead of opening
+        a broken "#".
+      */
+      link.addEventListener('click', event => {
+
+        event.preventDefault();
+
+        document.getElementById('messengers').scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+
+      });
+
+    });
+
+
+    /* ==========================================================
+       INITIALIZATION
+    ========================================================== */
+
+    updateCarousel(0, false);
+
+  </script>
+
+</body>
+</html>
